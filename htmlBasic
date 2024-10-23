@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+    <style>
+    body {background-color: rgb(158, 88, 84);}
+    h1   {color: rgb(200, 156, 145);}
+    p    {color: rgb(0, 0, 0);}
+    a    {color: rgb(255, 255, 255)}
+    </style>
+    <title>My first webpage! :3c</title>
+
+</head>
+
+<body> 
+    <header>
+        <h1>Hello!!</h1>
+        <h2>This is my first webpage. Let's try to make some elements.</h2>
+    </header> 
+    <button id ="buttonA">Press me for an party member name! </button>
+    <h3 id="headingA"></h3>
+    
+    <p>
+        This is going to be an example of a list. Here are some characters in dungeon meshi.
+        <div>
+            <ul>
+                <li><i>Laois Touden</i></li>
+                <li><b>Falin Touden</b></li>
+                <li><sub>Marcille Donato</sub></li>
+                <li><sup>Chilchuck Tims</sup></li>
+            </ul>
+        </div>
+        <a href="https://www.youtube.com/watch?v=asyT-N1Ip70&ab_channel=KADOKAWAanime">Here is an example link</a>
+    </p>
+      
+  <img src="laios.png" alt="laios from the anime dungeon meshi in a slipknot shirt"  width="200" height="228">>
+    <div>
+        <h1> Thank you for viewing :3c</h1>
+        <img src="graphic design is my passion.png" alt="graphic design is my passion" width="" height="250"    
+    </div>
+    <script src="JSAcode.js"></script>
+</body>

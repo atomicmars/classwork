@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Generator</title>
+</head>
+
+<body>
+  <div>
+    <button class="randomize">Generate random story</button>
+  </div>
+  
+  <p class="story"></p>
+  <script src = 'ButtonRandomizer.js'></script>
+</body>
+
+</html>
