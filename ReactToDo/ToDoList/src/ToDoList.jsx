@@ -1,9 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import './App.css';
 
 function ToDoList(params) {
 
-    const [tasks, setTasks] = useState(['Grab keys', 'Clean Dishes', 'Organize Room']);
+    const [tasks, setTasks] = useState(![]?persistedData:[])
     const [newTask, setNewTask] = useState("");
+    const persistedData = localStorage.getItem("task-list")
+
+    useEffect(() =>{
+        if(persistedData) {
+            setTasks(JSON.parse(persistedData));
+            [...tasks]
+            console.log("after",persistedData);
+        }
+    }, []);
+
+    useEffect(() => {
+        console.log('The tasks are;', tasks);
+        console.log('stringify-ed tasklist', tasks);
+        localStorage.setItem("task-list", JSON.stringify(tasks));
+    }, [tasks]);
+  
 
     function handleInputChange(event){
         setNewTask(event.target.value);
@@ -49,9 +66,9 @@ function ToDoList(params) {
         <div className="list content-center border-x-4 m-7">
         <div>
           <input
-                className="p-2 m-2"
+                className="p-2 m-2 hover:bg-yellow-100 text-black"
                 type="text"
-                placeholder="What task would you like to do?"
+                placeholder="What task would you like to do?  "
                 value={newTask}
                 onChange={handleInputChange}
 
@@ -67,7 +84,7 @@ function ToDoList(params) {
             {tasks.map((tasks, index) =>
                 <li key={index}>
                     <span className="text font-sans font-style: italic tracking-wide">{tasks}</span> 
-                    <button className="delete-button m-2 bg-white hover:bg-red-300 text-gray-800 font-semibold py-2 px-4 border bprder-gray-400 rounded shadow"
+                    <button className="delete-button m-2 bg-white hover:bg-red-100 text-gray-800 font-semibold py-2 px-4 border bprder-gray-400 rounded shadow"
                         onClick={()=> deleteTask (index)}>
                         Delete Task
                         </button>
