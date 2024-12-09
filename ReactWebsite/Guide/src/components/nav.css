@@ -13,3 +13,17 @@ ul{
     margin-bottom: .5rem;
     margin-left: 2rem;
   }
+
+  nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .navbar{
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+  }

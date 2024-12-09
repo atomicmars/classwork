@@ -43,6 +43,7 @@ body {
 
   nav{
     position: sticky;
+    overflow: hidden;
   }
 
 
@@ -82,4 +83,5 @@ body {
 
   .navbar {
     position: sticky;
+    overflow: hidden;
   }
