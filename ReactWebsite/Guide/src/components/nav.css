@@ -1,0 +1,15 @@
+ul{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+  }
+
+  ol{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+  }
